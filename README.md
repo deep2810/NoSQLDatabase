@@ -1,5 +1,17 @@
 # NoSQLDatabase
 
+NoSQL databases are used for unstructured data. You are going to create a mini-in-memory
+database. NoSQL databases tend to act like hashtables. Each piece of data has a key. When
+you add data to the database you provide the key and the data. To retrieve the data you use
+the key. To keep things on the simple side we will use strings as keys. Our data will be Strings,
+Numbers, “Arrays” and “Objects”. “Arrays” are ordered list of data (Strings, Numbers, “Arrays”
+or “Objects”). A single “Array” can hold multiple type of data at the same time. An “Object” is a
+hashtable with a String as a key and any data as the value. You will find the JSON library useful
+here. The operations on your NoSQL database will be to add new data, get the data at a
+given key, replace data at a given key, and remove a key and its data. Modifying data at a
+given key is a bit more complex, so we will not support that operation directly. Modifying data
+can be done with a retrieval and an add. Your first task in to implement the mini-in-memory database.
+
 The problem with in-memory data is that it is not persistent. So when the program stops running
 the data is lost. For persistence we will use two files. 
 The first file called “commands.txt” will contain all the operations done on the database that
